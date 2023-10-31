@@ -21,7 +21,9 @@
 ## הצטרפות
 
 ### הפעלה על [Heroku](https://heroku.com)
-[![הפעלה](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)### התקנה
+[![הפעלה](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+### התקנה
 - התקן מודולים נדרשים.
 ```sh
 apt install -y git python3 ffmpeg
