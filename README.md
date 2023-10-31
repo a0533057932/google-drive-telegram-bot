@@ -1,70 +1,68 @@
-# Google Drive Uploader Telegram Bot
-**A Telegram bot to upload files from Telegram or Direct links to Google Drive.**
-- Find it on Telegram as [Google Drive Uploader](https://t.me/uploadgdrivebot)
+# בוט להעלאת קבצים ל-Google Drive דרך טלגרם
+**בוט טלגרם להעלאת קבצים מטלגרם או מקישורים ישירים ל-Google Drive.**
+- אפשר למצוא אותו בטלגרם בשם [Google Drive Uploader](https://t.me/uploadgdrivebot)
 
-## Features
-- [X] Telegram files support.
-- [X] Direct Links support.
-- [X] Custom Upload Folder.
-- [X] TeamDrive Support.
-- [X] Clone/Copy Google Drive Files.
-- [X] Delete Google Drive Files.
-- [X] Empty Google Drive trash.
-- [X] youtube-dl support.
+## תכונות
+- [X] תמיכה בקבצים מטלגרם.
+- [X] תמיכה בקישורים ישירים.
+- [X] ספריית העלאה מותאמת אישית.
+- [X] תמיכה ב-TeamDrive.
+- [X] שיבוט/העתקת קבצים ב-Google Drive.
+- [X] מחיקת קבצים ב-Google Drive.
+- [X] ריקון סל המחזור ב-Google Drive.
+- [X] תמיכה ב-youtube-dl.
 
-## ToDo 
-- [ ] Handle more exceptions.
-- [ ] LOGGER support.
-- [ ] Service account support.
-- [ ] Update command.
+## משימות עתידיות
+- [ ] טיפול בשגיאות נוספות.
+- [ ] תמיכה ב-LOGGER.
+- [ ] תמיכה בחשבון שירות.
+- [ ] פקודת עדכון.
 
-## Deploying
+## הצטרפות
 
-### Deploy on [Heroku](https://heroku.com)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-### Installation
-- Install required modules.
+### הפעלה על [Heroku](https://heroku.com)
+[![הפעלה](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)### התקנה
+- התקן מודולים נדרשים.
 ```sh
 apt install -y git python3 ffmpeg
 ```
-- Clone this git repository.
+- שכפל את המאגר של Git הזה.
 ```sh 
 git clone https://github.com/viperadnan-git/google-drive-telegram-bot
 ```
-- Change Directory
+- שנה את התיקיה
 ```sh 
 cd google-drive-telegram-bot
 ```
-- Install requirements with pip3
+- התקן דרישות עם pip3
 ```sh 
 pip3 install -r requirements.txt
 ```
 
-### Configuration
-**There are two Ways for configuring this bot.**
-1. Add values to Environment Variables. And add a `ENV` var to Anything to enable it.
-2. Add values in [config.py](./bot/config.py). And make sure that no `ENV` environment variables existing.
+### הגדרה
+**ישנם שני אופנים להגדיר את הבוט.**
+1. הוסף ערכים למשתני הסביבה (Environment Variables). והוסף משתנה `ENV` לכל משתנה שברצונך להפעיל.
+2. הוסף ערכים ב-[config.py](./bot/config.py). וודא שאין משתני `ENV` קיימים.
 
-### Configuration Values
-- `BOT_TOKEN` - Get it by contacting to [BotFather](https://t.me/botfather)
-- `APP_ID` - Get it by creating app on [my.telegram.org](https://my.telegram.org/apps)
-- `API_HASH` - Get it by creating app on [my.telegram.org](https://my.telegram.org/apps)
-- `SUDO_USERS` - List of Telegram User ID of sudo users, seperated by space.
-- `SUPPORT_CHAT_LINK` - Telegram invite link of support chat.
-- `DATABASE_URL` - Postgres database url.
-- `DOWNLOAD_DIRECTORY` - Custom path for downloads. Must end with a forward `/` slash. (Default to `./downloads/`)
+### ערכי ההגדרה
+- `BOT_TOKEN` - ניתן לקבל אותו על ידי יצירת קשר עם [BotFather](https://t.me/botfather)
+- `APP_ID` - ניתן לקבל אותו על ידי יצירת אפליקציה ב-[my.telegram.org](https://my.telegram.org/apps)
+- `API_HASH` - ניתן לקבל אותו על ידי יצירת אפליקציה ב-[my.telegram.org](https://my.telegram.org/apps)
+- `SUDO_USERS` - רשימת מזהים משתמשי Telegram של מנהלי המערכת, מופרדים ברווח.
+- `SUPPORT_CHAT_LINK` - קישור לצ'אט התמיכה ב-Telegram.
+- `DATABASE_URL` - כתובת מסד נתונים של Postgres.
+- `DOWNLOAD_DIRECTORY` - נתיב מותאם אישית להורדות. יש לסיים בסלש קדמי `/`. (ברירת המחדל: `./downloads/`)
 
-### Deploy 
+### התקנה
 ```sh 
 python3 -m bot
 ```
 
-## Credits
-- [Dan](https://github.com/delivrance) for creating [PyroGram](https://pyrogram.org)
-- [Spechide](https://github.com/Spechide) for [gDriveDB.py](./bot/helpers/sql_helper/gDriveDB.py)
-- [Shivam Jha](https://github.com/lzzy12) for [Clone Feature](./bot/helpers/gdrive_utils/gDrive.py) from [python-aria-mirror-bot](https://github.com/lzzy12/python-aria-mirror-bot)
+## קרדיטים
+- [Dan](https://github.com/delivrance) על יצירת [PyroGram](https://pyrogram.org)
+- [Spechide](https://github.com/Spechide) על [gDriveDB.py](./bot/helpers/sql_helper/gDriveDB.py)
+- [Shivam Jha](https://github.com/lzzy12) על תכונת השיבוט (Clone Feature) מתוך [python-aria-mirror-bot](https://github.com/lzzy12/python-aria-mirror-bot)
 
-## Copyright & License
-- Copyright (©) 2020 by [Adnan Ahmad](https://github.com/viperadnan-git)
-- Licensed under the terms of the [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007](./LICENSE)
+## זכויות יוצרים ורישיון
+- כל הזכויות שמורות (©) 2020 על ידי [Adnan Ahmad](https://github.com/viperadnan-git)
+- מרשמים תחת תנאי [רישיון ה-GNU הציבורי הכללי, גרסה 3, 29 ביוני 2007](./LICENSE)
