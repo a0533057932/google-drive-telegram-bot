@@ -30,7 +30,7 @@ apt install -y git python3 ffmpeg
 ```
 - שכפל את המאגר של Git הזה.
 ```sh 
-git clone https://github.com/viperadnan-git/google-drive-telegram-bot
+git clone https://github.com/a0533057932/google-drive-telegram-bot
 ```
 - שנה את התיקיה
 ```sh 
