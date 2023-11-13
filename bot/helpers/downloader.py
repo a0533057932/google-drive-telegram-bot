@@ -31,12 +31,7 @@ def utube_dl(link):
     'logger': LOGGER,
     'format': 'bestvideo+bestaudio/best',
     'geo_bypass_country': 'IN'
-    'postprocessors': [{
-        'key': 'FFmpegVideoConvertor',
-        'preferedformat': 'mp4',
-    }],
   }
-
   with youtube_dl.YoutubeDL(ytdl_opts) as ytdl:
     try:
       meta = ytdl.extract_info(link, download=True)
